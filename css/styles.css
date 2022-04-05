@@ -1,0 +1,37 @@
+body{
+    min-width: 372px;
+}
+
+.wrapper{
+   min-height: 100vh; 
+}
+
+p.truncar-3l {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 469px){
+    .mt-xs-3 {
+        margin-top: 1rem;
+    }
+}
+
+label:hover .text-dark{
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+label .text-dark{
+    transition: color 0.2s ease;
+}
+
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
